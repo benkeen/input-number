@@ -57,7 +57,7 @@ var Component = function (_React$Component) {
       'div',
       { style: { margin: 10 } },
       __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_rc_input_number__["a" /* default */], {
-        prefixCls: 'one two',
+        prefixCls: 'custom-prefix rc-input-number',
         style: { width: 100 },
         defaultValue: 1,
         onChange: this.onChange,
