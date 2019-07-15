@@ -1,14 +1,14 @@
-webpackJsonp([8],{
+webpackJsonp([4],{
 
-/***/ 54:
+/***/ 125:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(55);
+module.exports = __webpack_require__(126);
 
 
 /***/ }),
 
-/***/ 55:
+/***/ 126:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44,63 +44,23 @@ var Component = function (_React$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
-      disabled: false,
-      readOnly: false,
-      value: 50000
-    }, _this.onChange = function (value) {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.onChange = function (value) {
       console.log('onChange:', value);
       _this.setState({ value: value });
-    }, _this.toggleDisabled = function () {
-      _this.setState({
-        disabled: !_this.state.disabled
-      });
-    }, _this.toggleReadOnly = function () {
-      _this.setState({
-        readOnly: !_this.state.readOnly
-      });
-    }, _this.numberWithCommas = function (x) {
-      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    }, _this.format = function (num) {
-      return '$ ' + _this.numberWithCommas(num) + ' boeing737';
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
-
-  Component.prototype.parser = function parser(num) {
-    return num.toString().split(' ')[1].replace(/,*/g, '');
-  };
 
   Component.prototype.render = function render() {
     return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(
       'div',
       { style: { margin: 10 } },
       __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_rc_input_number__["a" /* default */], {
-        min: -8000,
-        max: 10000000,
-        value: this.state.value,
-        style: { width: 200 },
-        readOnly: this.state.readOnly,
+        prefixCls: 'one two',
+        style: { width: 100 },
+        defaultValue: 1,
         onChange: this.onChange,
-        disabled: this.state.disabled,
-        autoFocus: false,
-        step: 100,
-        formatter: this.format,
-        parser: this.parser
-      }),
-      __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(
-        'p',
-        null,
-        __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(
-          'button',
-          { onClick: this.toggleDisabled },
-          'toggle Disabled'
-        ),
-        __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(
-          'button',
-          { onClick: this.toggleReadOnly },
-          'toggle readOnly'
-        )
-      )
+        precision: 2
+      })
     );
   };
 
@@ -111,5 +71,5 @@ __WEBPACK_IMPORTED_MODULE_3_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
 
 /***/ })
 
-},[54]);
-//# sourceMappingURL=combination-key-format.js.map
+},[125]);
+//# sourceMappingURL=multiple-classes.js.map
