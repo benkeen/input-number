@@ -44,7 +44,9 @@ var Component = function (_React$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.onChange = function (value) {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+      value: 5
+    }, _this.onChange = function (value) {
       console.log('onChange:', value);
       _this.setState({ value: value });
     }, _temp), _possibleConstructorReturn(_this, _ret);
